@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/email"
+            style="@style/LoginSignUp1Input"
+            android:hint="@string/email_kulladi_text"
+            android:inputType="text|textPersonName|textEmailAddress"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/LoginSignUp1Input"
+            android:hint="@string/parola_text"
+            android:inputType="textPassword"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
+
+        <RelativeLayout
+            android:id="@+id/logout_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rounded_new"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/btnCreatesignin"
+                style="@style/ButtonBluee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:onClick="onClick"
+                android:text="@string/giris_yap_text"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/appname_footer" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
